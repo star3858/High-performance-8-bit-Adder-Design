@@ -8,40 +8,42 @@ kogge-stone 이 속도는 가장 빠르지만 면적이 넓으므로 16bit나 32
 2 입력 게이트의 지연 = Δ
 4 비트 CLA는 합계를 완성하고 수행하기 위해 최대 6Δ를 필요.
 4 비트 CLA가있는 8 비트 CLA 회로도는 다음과 같다.
+
 ![image](https://user-images.githubusercontent.com/35095311/52532667-14c9d400-2d6c-11e9-8c70-2c2a57072a65.png)
 
-# layout
+## layout
 ![image](https://user-images.githubusercontent.com/35095311/52532675-3cb93780-2d6c-11e9-879d-612fe056eb0f.png)
 
-# CLA performance
+## CLA performance
 width : 2847𝝀 = 2847 * 0.06um = 170.82 um
 height : 601𝝀 = 601 * 0.06um = 36.06 um
 area : 2847𝝀 * 601𝝀 = 1711047𝝀^2 = 1711047 * ( 0.06um )^2 = 6159.7692 um ^2
 
-# input signal
+## input signal
 ![image](https://user-images.githubusercontent.com/35095311/52532685-66725e80-2d6c-11e9-89a1-c0063981ead4.png)
 
-# CLA wavform
+## CLA wavform
 ![image](https://user-images.githubusercontent.com/35095311/52532695-79852e80-2d6c-11e9-8598-6b6fb6b6c253.png)
 
-# 8-bit CLA Block diagram
+## 8-bit CLA Block diagram
 ![image](https://user-images.githubusercontent.com/35095311/52532704-9883c080-2d6c-11e9-9d4e-2675d6a7ee0f.png)
 
-# 8-bit RCA
+## 8-bit RCA
 ![image](https://user-images.githubusercontent.com/35095311/52532713-bc470680-2d6c-11e9-8809-0288d109b934.png)
 
-# RCA power, delay
+## RCA power, delay
 ![image](https://user-images.githubusercontent.com/35095311/52532717-c5d06e80-2d6c-11e9-8eb2-3b84ed40dfce.png)
 
-# 8-bit RCA layout
+## 8-bit RCA layout
 ![image](https://user-images.githubusercontent.com/35095311/52532719-d41e8a80-2d6c-11e9-81f0-f8f4b388bffd.png)
 
-# RCA performance
+## RCA performance
 width : 3460𝝀 = 3460 * 0.06um = 207.6 um
 height : 161𝝀 = 161 * 0.06um = 9.66 um
 area : 3460𝝀 * 161𝝀 = 557060𝝀^2 = 557060 * ( 0.06um )^2 = 2005 . 416 um^2
 
-# conclusion
+
+## conclusion
 Ripple Carry adder에서 가산기의 각 비트는 아래 비트로부터 Carry 출력을 기다려야 하지만 Carry-Lookahead adder에서 모든 Carry 출력은 한 번에 계산됩니다. 
 그 결과는 최상위 비트로 올라가는 "Ripple" 출력을 기다려야 하는 대신에, 전체 결과는 현저하게 적은 지연으로 계산할 수 있습니다. 
 Carry-Lookahead adder는 두 가지 이유에서 Ripple Carry-Lookahead adder보다 빠릅니다. 첫 번째, Carry-Lookahead는 n이 가산기의 비트 수라면, 논리 게이트의 수는 O(n)입니다. 반면에, Ripple Carry adder를 구현하기 위해서는 최소 O(n^2) 논리 게이트가 필요합니다. n이 커지게 되면, 더 많은 입력과 논리 게이트 사용이 필요하게 됩니다. 이렇게 큰 논리 게이트는 더 많은 트랜지스터가 필요하게 되고, 논리 게이트의 수가 O(n^2)라고 할지라도, 트랜지스터의 수는 O(n^3)가 됩니다. 따라서 n이 커질수록, Ripple Carry adder의 크기는 매우 커집니다. 
