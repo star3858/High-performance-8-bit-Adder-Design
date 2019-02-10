@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='U-2003.03'  
+.TITLE '* spice3 file created from cla1.ext - technology: tsmc'
+ tpdr tpdf tpd avgpower1 temper alter#  
+  5.882e-09    failed    failed  2.083e-03   25.0000    1.0000  

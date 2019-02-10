@@ -1,0 +1,1481 @@
+ Init: read install configuration file: C:\synopsys\Hspice2003.03\meta.cfg
+ ******  HSPICE    -- U-2003.03  (20030106) 00:58:18  12/13/2017  pcnt         
+  Copyright (C) 2003 Synopsys, Inc. All Rights Reserved.                       
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the 
+  terms and conditions of the license agreement found in:
+    C:\synopsys\Hspice2003.03\license.txt
+  Use of this program is your acceptance to be bound by this 
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: c:\users\star3\desktop\finalproj\clafinal2.sp                     
+  lic:  
+  lic: FLEXlm: v6.1g 
+  lic: USER:   star3                HOSTNAME: DESKTOP-RLEV716 
+  lic: HOSTID: 14abc5c9a8dd         PID:      21564 
+  lic: Using FLEXlm license file: 
+  lic: C:\synopsys\Hspice2003.03\avantd.dat 
+  lic: Checkout hspicewin;  Encryption code: ACFE052FD4EC9BCF5077 
+  lic: Notice: NOT TO BE SOLD 
+  lic: License/Maintenance for hspicewin will expire on 31-dec-2020/2003.3000 
+  lic: NODE LOCKED DEMO license on host 14abc5c9a8dd 
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice2003.03\meta.cfg
+ Init: hspice initialization file: C:\synopsys\Hspice2003.03\hspice.ini
+ * hspice.ini
+ *
+ * use ascii only for initial pc hspice release
+ *
+ .option post = 2
+ .lib 'tsmc018.l' mos
+ .model cmosn nmos (level   = 49 hdif = 0.25e-6 acm = 3
+ +version = 3.1            tnom    = 27             tox     = 4.2e-9
+ +xj      = 1e-7           nch     = 2.3549e17      vth0    = 0.3710619
+ +k1      = 0.5940793      k2      = 2.070131e-3    k3      = 1e-3
+ +k3b     = 2.7158495      w0      = 1e-7           nlx     = 2.005089e-7
+ +dvt0w   = 0              dvt1w   = 0              dvt2w   = 0
+ +dvt0    = 1.4615376      dvt1    = 0.3798134      dvt2    = 0.0692378
+ +u0      = 293.522312     ua      = -6.73646e-10   ub      = 1.164182e-18
+ +uc      = -2.84532e-11   vsat    = 9.286324e4     a0      = 1.7591856
+ +ags     = 0.3162202      b0      = -5.950938e-8   b1      = -1e-7
+ +keta    = 0.0111532      a1      = 3.896574e-4    a2      = 1
+ +rdsw    = 139.0465393    prwg    = 0.5            prwb    = -0.2
+ +wr      = 1              wint    = 0              lint    = 9.265899e-9
+ +xl      = -2e-8          xw      = -1e-8          dwg     = -1.343579e-9
+ +dwb     = -1.391607e-8   voff    = -0.0765575     nfactor = 2.4791597
+ +cit     = 0              cdsc    = 2.4e-4         cdscd   = 0
+ +cdscb   = 0              eta0    = 0              etab    = -0.0608407
+ +dsub    = 1              pclm    = 0.8853499      pdiblc1 = 0.116863
+ +pdiblc2 = 0.01           pdiblcb = -0.0475298     drout   = 0.5922434
+ +pscbe1  = 8e10           pscbe2  = 5.248199e-10   pvag    = 0.089248
+ +delta   = 0.01           rsh     = 6.8            mobmod  = 1
+ +prt     = 0              ute     = -1.5           kt1     = -0.11
+ +kt1l    = 0              kt2     = 0.022          ua1     = 4.31e-9
+ +ub1     = -7.61e-18      uc1     = -5.6e-11       at      = 3.3e4
+ +wl      = 0              wln     = 1              ww      = 0
+ +wwn     = 1              wwl     = 0              ll      = 0
+ +lln     = 1              lw      = 0              lwn     = 1
+ +lwl     = 0              capmod  = 2              xpart   = 0.5
+ +cgdo    = 7.75e-10       cgso    = 7.75e-10       cgbo    = 1e-12
+ +cj      = 9.955315e-4    pb      = 0.7345743      mj      = 0.3629904
+ +cjsw    = 2.586055e-10   pbsw    = 0.6451808      mjsw    = 0.1296914
+ +cjswg   = 3.3e-10        pbswg   = 0.6451808      mjswg   = 0.1296914
+ +cf      = 0              pvth0   = 1.33957e-3     prdsw   = -5
+ +pk2     = -1.7189e-4     wketa   = 0.010864       lketa   = -0.0102793
+ +pu0     = 37.4749547     pua     = 1.762367e-10   pub     = 9.411793e-25
+ +pvsat   = 2e3            peta0   = -1e-4          pketa   = -1.356792e-3    )
+ *
+ .model cmosp pmos (level   = 49 hdif = 0.25e-6 acm =3
+ +version = 3.1            tnom    = 27             tox     = 4.2e-9
+ +xj      = 1e-7           nch     = 4.1589e17      vth0    = -0.4220357
+ +k1      = 0.5813738      k2      = 0.0303955      k3      = 0
+ +k3b     = 11.3426872     w0      = 1e-6           nlx     = 9.876034e-8
+ +dvt0w   = 0              dvt1w   = 0              dvt2w   = 0
+ +dvt0    = 0.5131166      dvt1    = 0.2665264      dvt2    = 0.1
+ +u0      = 120.5316596    ua      = 1.645481e-9    ub      = 1e-21
+ +uc      = -1e-10         vsat    = 2e5            a0      = 1.671928
+ +ags     = 0.3934127      b0      = 1.830733e-6    b1      = 4.739218e-6
+ +keta    = 0.0202801      a1      = 0.1976849      a2      = 0.5787213
+ +rdsw    = 265.2609374    prwg    = 0.5            prwb    = -0.2145086
+ +wr      = 1              wint    = 0              lint    = 2.176517e-8
+ +xl      = -2e-8          xw      = -1e-8          dwg     = -4.223522e-8
+ +dwb     = 7.670464e-9    voff    = -0.096172      nfactor = 2
+ +cit     = 0              cdsc    = 2.4e-4         cdscd   = 0
+ +cdscb   = 0              eta0    = 0.023671       etab    = -0.3005133
+ +dsub    = 1.2320494      pclm    = 2.2844319      pdiblc1 = 4.836921e-3
+ +pdiblc2 = 0.0442167      pdiblcb = -1e-3          drout   = 9.991187e-4
+ +pscbe1  = 1.732893e9     pscbe2  = 5e-10          pvag    = 14.9616148
+ +delta   = 0.01           rsh     = 7.6            mobmod  = 1
+ +prt     = 0              ute     = -1.5           kt1     = -0.11
+ +kt1l    = 0              kt2     = 0.022          ua1     = 4.31e-9
+ +ub1     = -7.61e-18      uc1     = -5.6e-11       at      = 3.3e4
+ +wl      = 0              wln     = 1              ww      = 0
+ +wwn     = 1              wwl     = 0              ll      = 0
+ +lln     = 1              lw      = 0              lwn     = 1
+ +lwl     = 0              capmod  = 2              xpart   = 0.5
+ +cgdo    = 6.6e-10        cgso    = 6.6e-10        cgbo    = 1e-12
+ +cj      = 1.183858e-3    pb      = 0.8534482      mj      = 0.4124158
+ +cjsw    = 2.066263e-10   pbsw    = 0.6189346      mjsw    = 0.2893774
+ +cjswg   = 4.22e-10       pbswg   = 0.6189346      mjswg   = 0.2893774
+ +cf      = 0              pvth0   = 2.308546e-3    prdsw   = 13.6874174
+ +pk2     = 2.657069e-3    wketa   = 2.467864e-3    lketa   = -2.56649e-3
+ +pu0     = -1.846164      pua     = -8.06063e-11   pub     = 1e-21
+ +pvsat   = -50            peta0   = 1e-4           pketa   = 2.794471e-3     )
+ *
+ .endl mos
+  
+ *condition
+ .option scale=0.06u
+ .global vdd gnd
+ .temp = 25
+  
+ *input signal
+ vdd vdd gnd 3.3
+ va a0 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+ vb b0 gnd pwl (0n 0 49n 0 50n 3.3 74n 3.3 75n 0 r )
+ vc c0 gnd pwl (0n 0 24n 0 25n 3.3 49n 3.3 50n 0 r )
+  
+ vd a1 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+ ve b1 gnd pwl (0n 0 24n 0 25n 3.3 49n 3.3 50n 0 r )
+  
+ vf a2 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+ vg b2 gnd pwl (0n 0 49n 0 50n 3.3 74n 3.3 75n 0 r )
+  
+ vh a3 gnd pwl (0n 3.3 24n 3.3 25n 0 100n 0 r)
+ vi b3 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+  
+ vj a4 gnd pwl (0n 0 49n 0 50n 3.3 74n 3.3 75n 0 r )
+ vk b4 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+  
+ vl a5 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+ vm b5 gnd pwl (0n 0 24n 0 25n 3.3 49n 3.3 50n 0 r )
+  
+ vn a6 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+ vo b6 gnd pwl (0n 0 49n 0 50n 3.3 74n 3.3 75n 0 r )
+  
+ vp a7 gnd pwl (0n 3.3 24n 3.3 25n 0 100n 0 r)
+ vq b7 gnd pwl (0n 0 74n 0 75n 3.3 99n 3.3 100n 0 r )
+  
+ m1000 a_n2762_811# a7 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=922752 ps=48024
+ m1001 a_n2720_810# b7 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1002 a_n2691_933# b7 p7 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1003 vdd a_n2720_810# a_n2691_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1004 a_n2691_933# a_n2762_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1005 p7 a7 a_n2691_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1006 a_n2606_933# a7 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1007 vdd b7 a_n2606_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1008 g7 a_n2606_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1009 a_n2309_811# a6 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=0 ps=0
+ m1010 a_n2267_810# b6 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1011 a_n2238_933# b6 p6 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1012 vdd a_n2267_810# a_n2238_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1013 a_n2238_933# a_n2309_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1014 p6 a6 a_n2238_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1015 a_n2153_933# a6 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1016 vdd b6 a_n2153_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1017 g6 a_n2153_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1018 a_n2018_811# a5 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=0 ps=0
+ m1019 a_n1976_810# b5 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1020 a_n1947_933# b5 p5 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1021 vdd a_n1976_810# a_n1947_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1022 a_n1947_933# a_n2018_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1023 p5 a5 a_n1947_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1024 a_n1862_933# a5 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1025 vdd b5 a_n1862_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1026 g5 a_n1862_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1027 a_n1775_811# a4 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=0 ps=0
+ m1028 a_n1733_810# b4 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1029 a_n1704_933# b4 p4 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1030 vdd a_n1733_810# a_n1704_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1031 a_n1704_933# a_n1775_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1032 p4 a4 a_n1704_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1033 a_n1619_933# a4 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1034 vdd b4 a_n1619_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1035 g4 a_n1619_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1036 a_n1093_811# a3 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=0 ps=0
+ m1037 a_n1051_810# b3 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1038 a_n1022_933# b3 p3 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1039 vdd a_n1051_810# a_n1022_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1040 a_n1022_933# a_n1093_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1041 p3 a3 a_n1022_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1042 a_n937_933# a3 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1043 vdd b3 a_n937_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1044 g3 a_n937_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1045 a_n640_811# a2 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=0 ps=0
+ m1046 a_n598_810# b2 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1047 a_n569_933# b2 p2 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1048 vdd a_n598_810# a_n569_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1049 a_n569_933# a_n640_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1050 p2 a2 a_n569_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1051 a_n484_933# a2 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1052 vdd b2 a_n484_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1053 g2 a_n484_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1054 a_n349_811# a1 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=0 ps=0
+ m1055 a_n307_810# b1 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1056 a_n278_933# b1 p1 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1057 vdd a_n307_810# a_n278_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1058 a_n278_933# a_n349_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1059 p1 a1 a_n278_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1060 a_n193_933# a1 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1061 vdd b1 a_n193_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1062 g1 a_n193_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1063 a_n106_811# a0 vdd vdd cmosp w=96 l=18
+ +  ad=5184 pd=300 as=0 ps=0
+ m1064 a_n64_810# b0 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1065 a_n35_933# b0 p0 vdd cmosp w=96 l=18
+ +  ad=15552 pd=708 as=12096 ps=636
+ m1066 vdd a_n64_810# a_n35_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1067 a_n35_933# a_n106_811# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1068 p0 a0 a_n35_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1069 a_50_933# a0 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1070 vdd b0 a_50_933# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1071 g0 a_50_933# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1072 a_n2762_811# a7 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=407232 ps=29448
+ m1073 p7 b7 a_n2704_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1074 a_n2675_822# a_n2720_810# p7 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1075 gnd a_n2762_811# a_n2675_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1076 a_n2704_822# a7 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1077 a_n2720_810# b7 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1078 a_n2606_796# a7 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1079 a_n2606_933# b7 a_n2606_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1080 g7 a_n2606_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1081 a_n2309_811# a6 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=0 ps=0
+ m1082 p6 b6 a_n2251_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1083 a_n2222_822# a_n2267_810# p6 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1084 gnd a_n2309_811# a_n2222_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1085 a_n2251_822# a6 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1086 a_n2267_810# b6 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1087 a_n2153_796# a6 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1088 a_n2153_933# b6 a_n2153_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1089 g6 a_n2153_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1090 a_n2018_811# a5 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=0 ps=0
+ m1091 p5 b5 a_n1960_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1092 a_n1931_822# a_n1976_810# p5 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1093 gnd a_n2018_811# a_n1931_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1094 a_n1960_822# a5 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1095 a_n1976_810# b5 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1096 a_n1862_796# a5 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1097 a_n1862_933# b5 a_n1862_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1098 g5 a_n1862_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1099 a_n1775_811# a4 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=0 ps=0
+ m1100 p4 b4 a_n1717_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1101 a_n1688_822# a_n1733_810# p4 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1102 gnd a_n1775_811# a_n1688_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1103 a_n1717_822# a4 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1104 a_n1733_810# b4 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1105 a_n3084_601# p4 vdd vdd cmosp w=96 l=18
+ +  ad=21312 pd=1020 as=0 ps=0
+ m1106 vdd p5 a_n3084_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1107 a_n3084_601# p6 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1108 vdd p7 a_n3084_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1109 a_n3084_601# c4 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1110 a_n2991_483# a_n3084_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1111 vdd g4 a_n2969_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=19008 ps=972
+ m1112 a_n2969_601# p5 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1113 vdd p6 a_n2969_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1114 a_n2969_601# p7 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1115 a_n2880_483# a_n2969_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1116 vdd g5 a_n2860_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=13248 ps=660
+ m1117 a_n2860_601# p6 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1118 vdd p7 a_n2860_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1119 a_n2787_483# a_n2860_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1120 a_n2748_601# g6 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1121 vdd p7 a_n2748_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1122 a_n2704_483# a_n2748_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1123 a_n2670_601# a_n2704_483# vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1124 a_n2654_601# a_n2787_483# a_n2670_601# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1125 a_n2638_601# a_n2880_483# a_n2654_601# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1126 a_n2622_601# a_n2991_483# a_n2638_601# vdd cmosp w=96 l=18
+ +  ad=6912 pd=336 as=0 ps=0
+ m1127 a_n2683_483# g7 a_n2622_601# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1128 c8 a_n2683_483# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1129 vdd p4 a_n2526_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=19008 ps=972
+ m1130 a_n2526_601# p5 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1131 vdd p6 a_n2526_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1132 a_n2526_601# c4 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1133 a_n2437_483# a_n2526_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1134 vdd p6 a_n2417_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=13248 ps=660
+ m1135 a_n2417_601# g4 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1136 vdd p5 a_n2417_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1137 a_n2344_483# a_n2417_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1138 a_n2305_601# g5 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1139 vdd p6 a_n2305_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1140 a_n2261_483# a_n2305_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1141 a_n2227_601# a_n2261_483# vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1142 a_n2211_601# a_n2344_483# a_n2227_601# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1143 a_n2195_601# a_n2437_483# a_n2211_601# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1144 a_n2240_483# g6 a_n2195_601# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1145 c7 a_n2240_483# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1146 vdd p5 a_n2043_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=13248 ps=660
+ m1147 a_n2043_601# p4 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1148 vdd c4 a_n2043_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1149 a_n1970_483# a_n2043_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1150 a_n1931_601# g4 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1151 vdd p5 a_n1931_601# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1152 a_n1887_483# a_n1931_601# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1153 a_n1830_601# a_n1887_483# vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1154 a_n1814_601# a_n1970_483# a_n1830_601# vdd cmosp w=96 l=18
+ +  ad=8064 pd=360 as=0 ps=0
+ m1155 a_n1843_483# g5 a_n1814_601# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1156 c6 a_n1843_483# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1157 a_n1619_796# a4 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1158 a_n1619_933# b4 a_n1619_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1159 g4 a_n1619_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1160 a_n1093_811# a3 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=0 ps=0
+ m1161 p3 b3 a_n1035_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1162 a_n1006_822# a_n1051_810# p3 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1163 gnd a_n1093_811# a_n1006_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1164 a_n1035_822# a3 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1165 a_n1051_810# b3 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1166 a_n937_796# a3 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1167 a_n937_933# b3 a_n937_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1168 g3 a_n937_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1169 a_n640_811# a2 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=0 ps=0
+ m1170 p2 b2 a_n582_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1171 a_n553_822# a_n598_810# p2 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1172 gnd a_n640_811# a_n553_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1173 a_n582_822# a2 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1174 a_n598_810# b2 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1175 a_n3084_483# p4 gnd gnd cmosn w=48 l=18
+ +  ad=4032 pd=264 as=0 ps=0
+ m1176 a_n3067_483# p5 a_n3084_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1177 a_n3051_483# p6 a_n3067_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1178 a_n3035_483# p7 a_n3051_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1179 a_n3084_601# c4 a_n3035_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1180 a_n2991_483# a_n3084_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1181 a_n2956_483# g4 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1182 a_n2940_483# p5 a_n2956_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1183 a_n2924_483# p6 a_n2940_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1184 a_n2969_601# p7 a_n2924_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1185 a_n2880_483# a_n2969_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1186 a_n2847_483# g5 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1187 a_n2831_483# p6 a_n2847_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1188 a_n2860_601# p7 a_n2831_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1189 a_n2787_483# a_n2860_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1190 a_n2748_483# g6 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1191 a_n2748_601# p7 a_n2748_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1192 a_n2704_483# a_n2748_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1193 gnd a_n2704_483# a_n2683_483# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=10080 ps=708
+ m1194 a_n2683_483# a_n2787_483# gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1195 gnd a_n2880_483# a_n2683_483# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1196 a_n2683_483# a_n2991_483# gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1197 gnd g7 a_n2683_483# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1198 c8 a_n2683_483# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1199 a_n2513_483# p4 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1200 a_n2497_483# p5 a_n2513_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1201 a_n2481_483# p6 a_n2497_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1202 a_n2526_601# c4 a_n2481_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1203 a_n2437_483# a_n2526_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1204 a_n2404_483# p6 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1205 a_n2388_483# g4 a_n2404_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1206 a_n2417_601# p5 a_n2388_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1207 a_n2344_483# a_n2417_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1208 a_n2305_483# g5 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1209 a_n2305_601# p6 a_n2305_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1210 a_n2261_483# a_n2305_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1211 gnd a_n2261_483# a_n2240_483# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=9504 ps=684
+ m1212 a_n2240_483# a_n2344_483# gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1213 gnd a_n2437_483# a_n2240_483# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1214 a_n2240_483# g6 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1215 c7 a_n2240_483# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1216 a_n2826_274# p7 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1217 a_n2787_273# c7 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1218 a_n1650_599# c4 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1219 vdd p4 a_n1650_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1220 a_n1606_481# a_n1650_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1221 a_n1571_599# a_n1606_481# vdd vdd cmosp w=96 l=18
+ +  ad=8064 pd=360 as=0 ps=0
+ m1222 a_n1571_481# g4 a_n1571_599# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1223 c5 a_n1571_481# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1224 a_n1480_599# p0 vdd vdd cmosp w=96 l=18
+ +  ad=21312 pd=1020 as=0 ps=0
+ m1225 vdd p1 a_n1480_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1226 a_n1480_599# p2 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1227 vdd p3 a_n1480_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1228 a_n1480_599# c0 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1229 a_n1387_481# a_n1480_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1230 vdd g0 a_n1365_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=19008 ps=972
+ m1231 a_n1365_599# p1 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1232 vdd p2 a_n1365_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1233 a_n1365_599# p3 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1234 a_n1276_481# a_n1365_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1235 vdd g1 a_n1256_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=13248 ps=660
+ m1236 a_n1256_599# p2 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1237 vdd p3 a_n1256_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1238 a_n1183_481# a_n1256_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1239 a_n1144_599# g2 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1240 vdd p3 a_n1144_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1241 a_n1100_481# a_n1144_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1242 a_n1066_599# a_n1100_481# vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1243 a_n1050_599# a_n1183_481# a_n1066_599# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1244 a_n1034_599# a_n1276_481# a_n1050_599# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1245 a_n1018_599# a_n1387_481# a_n1034_599# vdd cmosp w=96 l=18
+ +  ad=6912 pd=336 as=0 ps=0
+ m1246 a_n1079_481# g3 a_n1018_599# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1247 c4 a_n1079_481# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1248 a_n2030_483# p5 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1249 a_n2014_483# p4 a_n2030_483# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1250 a_n2043_601# c4 a_n2014_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1251 a_n1970_483# a_n2043_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1252 a_n1931_483# g4 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1253 a_n1931_601# p5 a_n1931_483# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1254 a_n1887_483# a_n1931_601# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1255 gnd a_n1887_483# a_n1843_483# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=6912 ps=480
+ m1256 a_n1843_483# a_n1970_483# gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1257 gnd g5 a_n1843_483# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1258 c6 a_n1843_483# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1259 a_n1650_481# c4 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1260 a_n1650_599# p4 a_n1650_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1261 a_n1606_481# a_n1650_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1262 a_n1571_481# a_n1606_481# gnd gnd cmosn w=48 l=18
+ +  ad=4032 pd=264 as=0 ps=0
+ m1263 gnd g4 a_n1571_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1264 c5 a_n1571_481# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1265 a_n2758_377# c7 s7 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=12096 ps=636
+ m1266 vdd a_n2787_273# a_n2758_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1267 a_n2758_377# a_n2826_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1268 s7 p7 a_n2758_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1269 a_n2318_274# p6 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1270 a_n2279_273# c6 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1271 a_n2826_274# p7 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1272 s7 c7 a_n2771_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1273 a_n2742_285# a_n2787_273# s7 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1274 gnd a_n2826_274# a_n2742_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1275 a_n2771_285# p7 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1276 a_n2787_273# c7 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1277 a_n2250_377# c6 s6 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=12096 ps=636
+ m1278 vdd a_n2279_273# a_n2250_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1279 a_n2250_377# a_n2318_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1280 s6 p6 a_n2250_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1281 a_n1974_274# p5 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1282 a_n1935_273# c5 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1283 a_n484_796# a2 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1284 a_n484_933# b2 a_n484_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1285 g2 a_n484_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1286 a_n349_811# a1 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=0 ps=0
+ m1287 p1 b1 a_n291_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1288 a_n262_822# a_n307_810# p1 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1289 gnd a_n349_811# a_n262_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1290 a_n291_822# a1 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1291 a_n307_810# b1 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1292 a_n193_796# a1 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1293 a_n193_933# b1 a_n193_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1294 g1 a_n193_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1295 a_n106_811# a0 gnd gnd cmosn w=48 l=18
+ +  ad=2592 pd=204 as=0 ps=0
+ m1296 p0 b0 a_n48_822# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1297 a_n19_822# a_n64_810# p0 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1298 gnd a_n106_811# a_n19_822# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1299 a_n48_822# a0 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1300 a_n64_810# b0 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1301 a_50_796# a0 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1302 a_50_933# b0 a_50_796# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1303 g0 a_50_933# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1304 vdd p0 a_n857_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=19008 ps=972
+ m1305 a_n857_599# p1 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1306 vdd p2 a_n857_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1307 a_n857_599# c0 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1308 a_n768_481# a_n857_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1309 vdd g0 a_n748_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=13248 ps=660
+ m1310 a_n748_599# p1 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1311 vdd p2 a_n748_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1312 a_n675_481# a_n748_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1313 a_n636_599# g1 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1314 vdd p2 a_n636_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1315 a_n592_481# a_n636_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1316 a_n558_599# a_n592_481# vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1317 a_n542_599# a_n675_481# a_n558_599# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1318 a_n526_599# a_n768_481# a_n542_599# vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1319 a_n571_481# g2 a_n526_599# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1320 c3 a_n571_481# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1321 vdd p1 a_n374_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=13248 ps=660
+ m1322 a_n374_599# p0 vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1323 vdd c0 a_n374_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1324 and3 a_n374_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1325 a_n262_599# g0 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1326 vdd p1 a_n262_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1327 and2 a_n262_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1328 a_n161_599# and2 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1329 a_n145_599# and3 a_n161_599# vdd cmosp w=96 l=18
+ +  ad=8064 pd=360 as=0 ps=0
+ m1330 a_n174_481# g1 a_n145_599# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1331 c2 a_n174_481# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1332 a_n47_599# c0 vdd vdd cmosp w=96 l=18
+ +  ad=7488 pd=348 as=0 ps=0
+ m1333 vdd p0 a_n47_599# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1334 and1 a_n47_599# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1335 a_32_599# and1 vdd vdd cmosp w=96 l=18
+ +  ad=8064 pd=360 as=0 ps=0
+ m1336 a_32_481# g0 a_32_599# vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1337 c1 a_32_481# vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1338 a_n1480_481# p0 gnd gnd cmosn w=48 l=18
+ +  ad=4032 pd=264 as=0 ps=0
+ m1339 a_n1463_481# p1 a_n1480_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1340 a_n1447_481# p2 a_n1463_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1341 a_n1431_481# p3 a_n1447_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1342 a_n1480_599# c0 a_n1431_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1343 a_n1387_481# a_n1480_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1344 a_n1352_481# g0 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1345 a_n1336_481# p1 a_n1352_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1346 a_n1320_481# p2 a_n1336_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1347 a_n1365_599# p3 a_n1320_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1348 a_n1276_481# a_n1365_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1349 a_n1243_481# g1 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1350 a_n1227_481# p2 a_n1243_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1351 a_n1256_599# p3 a_n1227_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1352 a_n1183_481# a_n1256_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1353 a_n1144_481# g2 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1354 a_n1144_599# p3 a_n1144_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1355 a_n1100_481# a_n1144_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1356 gnd a_n1100_481# a_n1079_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=10080 ps=708
+ m1357 a_n1079_481# a_n1183_481# gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1358 gnd a_n1276_481# a_n1079_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1359 a_n1079_481# a_n1387_481# gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1360 gnd g3 a_n1079_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1361 c4 a_n1079_481# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1362 a_n844_481# p0 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1363 a_n828_481# p1 a_n844_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1364 a_n812_481# p2 a_n828_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1365 a_n857_599# c0 a_n812_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1366 a_n768_481# a_n857_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1367 a_n735_481# g0 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1368 a_n719_481# p1 a_n735_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1369 a_n748_599# p2 a_n719_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1370 a_n675_481# a_n748_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1371 a_n636_481# g1 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1372 a_n636_599# p2 a_n636_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1373 a_n592_481# a_n636_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1374 gnd a_n592_481# a_n571_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=9504 ps=684
+ m1375 a_n571_481# a_n675_481# gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1376 gnd a_n768_481# a_n571_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1377 a_n571_481# g2 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1378 c3 a_n571_481# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1379 a_n2318_274# p6 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1380 s6 c6 a_n2263_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1381 a_n2234_285# a_n2279_273# s6 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1382 gnd a_n2318_274# a_n2234_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1383 a_n2263_285# p6 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1384 a_n2279_273# c6 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1385 a_n1906_377# c5 s5 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=12096 ps=636
+ m1386 vdd a_n1935_273# a_n1906_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1387 a_n1906_377# a_n1974_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1388 s5 p5 a_n1906_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1389 a_n1593_274# c4 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1390 a_n1554_273# p4 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1391 a_n1974_274# p5 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1392 s5 c5 a_n1919_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1393 a_n1890_285# a_n1935_273# s5 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1394 gnd a_n1974_274# a_n1890_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1395 a_n1919_285# p5 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1396 a_n1935_273# c5 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1397 a_n1525_377# p4 s4 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=12096 ps=636
+ m1398 vdd a_n1554_273# a_n1525_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1399 a_n1525_377# a_n1593_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1400 s4 c4 a_n1525_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1401 a_n1157_274# p3 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1402 a_n1118_273# c3 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1403 a_n361_481# p1 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1404 a_n345_481# p0 a_n361_481# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1405 a_n374_599# c0 a_n345_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1406 and3 a_n374_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1407 a_n262_481# g0 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1408 a_n262_599# p1 a_n262_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1409 and2 a_n262_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1410 gnd and2 a_n174_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=6912 ps=480
+ m1411 a_n174_481# and3 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1412 gnd g1 a_n174_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1413 c2 a_n174_481# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1414 a_n47_481# c0 gnd gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1415 a_n47_599# p0 a_n47_481# gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1416 and1 a_n47_599# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1417 a_32_481# and1 gnd gnd cmosn w=48 l=18
+ +  ad=4032 pd=264 as=0 ps=0
+ m1418 gnd g0 a_32_481# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1419 c1 a_32_481# gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1420 a_n1593_274# c4 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1421 s4 p4 a_n1538_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1422 a_n1509_285# a_n1554_273# s4 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1423 gnd a_n1593_274# a_n1509_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1424 a_n1538_285# c4 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1425 a_n1554_273# p4 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1426 a_n1089_377# c3 s3 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=13248 ps=660
+ m1427 vdd a_n1118_273# a_n1089_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1428 a_n1089_377# a_n1157_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1429 s3 p3 a_n1089_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1430 a_n649_274# p2 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1431 a_n610_273# c2 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1432 a_n1157_274# p3 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1433 s3 c3 a_n1102_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=6336 ps=456
+ m1434 a_n1073_285# a_n1118_273# s3 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1435 gnd a_n1157_274# a_n1073_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1436 a_n1102_285# p3 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1437 a_n1118_273# c3 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1438 a_n581_377# c2 s2 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=12096 ps=636
+ m1439 vdd a_n610_273# a_n581_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1440 a_n581_377# a_n649_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1441 s2 p2 a_n581_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1442 a_n305_274# p1 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1443 a_n266_273# c1 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1444 a_n649_274# p2 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1445 s2 c2 a_n594_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1446 a_n565_285# a_n610_273# s2 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1447 gnd a_n649_274# a_n565_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1448 a_n594_285# p2 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1449 a_n610_273# c2 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1450 a_n237_377# c1 s1 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=12096 ps=636
+ m1451 vdd a_n266_273# a_n237_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1452 a_n237_377# a_n305_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1453 s1 p1 a_n237_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1454 a_n47_274# c0 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1455 a_n8_273# p0 vdd vdd cmosp w=96 l=18
+ +  ad=5760 pd=312 as=0 ps=0
+ m1456 a_n305_274# p1 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1457 s1 c1 a_n250_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1458 a_n221_285# a_n266_273# s1 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1459 gnd a_n305_274# a_n221_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1460 a_n250_285# p1 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1461 a_n266_273# c1 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1462 a_21_377# p0 s0 vdd cmosp w=96 l=18
+ +  ad=14976 pd=696 as=12096 ps=636
+ m1463 vdd a_n8_273# a_21_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1464 a_21_377# a_n47_274# vdd vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1465 s0 c0 a_21_377# vdd cmosp w=96 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1466 a_n47_274# c0 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ m1467 s0 p0 a_8_285# gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=5760 ps=432
+ m1468 a_37_285# a_n8_273# s0 gnd cmosn w=48 l=18
+ +  ad=3744 pd=252 as=0 ps=0
+ m1469 gnd a_n47_274# a_37_285# gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1470 a_8_285# c0 gnd gnd cmosn w=48 l=18
+ +  ad=0 pd=0 as=0 ps=0
+ m1471 a_n8_273# p0 gnd gnd cmosn w=48 l=18
+ +  ad=2880 pd=216 as=0 ps=0
+ c0 p5 g5 8.4ff
+ c1 p2 g1 6.8ff
+ c2 vdd c0 11.9ff
+ c3 p5 g4 8.4ff
+ c4 p1 g1 8.9ff
+ c5 p6 g6 7.7ff
+ c6 p3 g2 5.5ff
+ c7 c4 vdd 12.7ff
+ c8 p4 g4 8.6ff
+ c9 p1 g0 7.9ff
+ c10 p6 g5 6.4ff
+ c11 p2 g2 8.2ff
+ c12 p0 g0 8.2ff
+ c13 g6 p7 4.3ff
+ c14 c1 gnd! 2.8ff
+ c15 c2 gnd! 3.3ff
+ c16 c3 gnd! 3.6ff
+ c17 c5 gnd! 3.0ff
+ c18 c0 gnd! 7.0ff
+ c19 c6 gnd! 3.3ff
+ c20 c7 gnd! 3.6ff
+ c21 c4 gnd! 9.5ff
+ c22 gnd gnd! 26.2ff
+ c23 g0 gnd! 8.8ff
+ c24 p0 gnd! 10.4ff
+ c25 g1 gnd! 7.1ff
+ c26 p1 gnd! 11.7ff
+ c27 g2 gnd! 5.7ff
+ c28 p2 gnd! 10.4ff
+ c29 g3 gnd! 2.4ff
+ c30 p3 gnd! 7.2ff
+ c31 g4 gnd! 8.8ff
+ c32 p4 gnd! 10.2ff
+ c33 g5 gnd! 6.9ff
+ c34 p5 gnd! 11.4ff
+ c35 g6 gnd! 5.5ff
+ c36 p6 gnd! 10.2ff
+ c37 g7 gnd! 2.2ff
+ c38 p7 gnd! 7.0ff
+ c39 a0 gnd! 2.2ff
+ c40 a1 gnd! 2.2ff
+ c41 a2 gnd! 2.2ff
+ c42 a3 gnd! 2.2ff
+ c43 a4 gnd! 2.2ff
+ c44 a5 gnd! 2.2ff
+ c45 a6 gnd! 2.2ff
+ c46 a7 gnd! 2.2ff
+ c47 vdd gnd! 94.0ff
+  
+  
+ cs0 s0 gnd 10f
+ cs1 s1 gnd 10f
+ cs2 s2 gnd 10f
+ cs3 s3 gnd 10f
+ cs4 s4 gnd 10f
+ cs5 s5 gnd 10f
+ cs6 s6 gnd 10f
+ cs7 s7 gnd 10f
+  
+ ccout c8 gnd 10f
+  
+ .tran 0.01n 100n
+ .measure tpdr
+ + trig=v(a0) val=1.65 rise=1
+ + targ=v(c8) val=1.65 rise=1
+ .measure tpdf
+ + trig=v(a0) val=1.65 fall=1
+ + targ=v(c8) val=1.65 fall=1
+ .measure tpd param='(tpdr+tpdf)/2'
+  
+ .measure avgpower1 avg power from=10ns to=100ns
+ .probe
+
+ **warning**:  unknown analysis mode:  to       .. line ignored
+
+ .end
+  
+1 ******  HSPICE    -- U-2003.03  (20030106) 00:58:18  12/13/2017  pcnt         
+ ******  
+ * spice3 file created from cla1.ext - technology: tsmc                        
+  ******  mos   model parameters           tnom=  25.000 temp=  25.000         
+ ******  
+ ***************************************************************************
+ ***        model parameters  model name:   0:cmosn    model type:nmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=     2002.2               level=         49         
+      version=        3.1            paramchk=          0         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          1         
+       capMod=          2               xpart=        0.5         
+       mobMod=          1              nqsMod=          0         
+          elm=          5            sfvtflag=          0         
+          tox=   4.2e-009 meter            xj=     1e-007 meter   
+      binflag=          0                lmin=          0 meter   
+         lmax=          0 meter          wmin=          0 meter   
+         wmax=          0 meter          lref=          0 meter   
+         wref=          0 meter          lint=9.2659e-009 meter   
+         wint=          0 meter         lmult=          1         
+        wmult=          1                  ll=          0         
+          lln=          1                  lw=          0         
+          lwn=          1                 lwl=          0         
+           wl=          0                 wln=          1         
+           ww=          0                 wwn=          1         
+          wwl=          0                 dwg=-1.34358e-009 m/V     
+          dwb=-1.39161e-008 m/V^1/2          a0=    1.75919         
+          ags=    0.31622 V^-1             b0=-5.95094e-008 meter   
+           b1=    -1e-007 meter          keta=  0.0111532 V^-1    
+         voff= -0.0765575 V             ngate=          0 cm^-3   
+          vbx=          0 V               vbm=         -3 V       
+           xt=  1.55e-007 meter          vth0=   0.371062 V       
+          nch=2.3549e+017 cm^-3          nsub=     6e+016 cm^-3   
+          nlx=2.00509e-007 meter        gamma1=          0 V^-1/2  
+       gamma2=          0 V^-1/2           k1=   0.594079 V^1/2   
+           k2= 0.00207013                  k3=      0.001         
+          k3b=    2.71585 V^-1             w0=     1e-007 meter   
+         dvt0=    1.46154                dvt1=   0.379813         
+         dvt2=  0.0692378 V^-1          dvt0w=          0 meter^-1
+        dvt1w=          0 meter^-1      dvt2w=          0 V^-1    
+         dsub=          1                eta0=          0         
+         etab= -0.0608407 V^-1             u0=    293.522 cm^2/V/sec
+           ua=-6.73646e-010 m/V              ub=1.16418e-018 (m/V)^2 
+           uc=-2.84532e-011 V^-1           vsat=    92863.2 m/sec   
+           a1=0.000389657 v^-1             a2=          1         
+        delta=       0.01 V              rdsw=    139.047 ohm-um  
+         prwg=        0.5 V^-1           prwb=       -0.2 V^-1/2  
+           wr=          1                pclm=    0.88535         
+      pdiblc1=   0.116863             pdiblc2=       0.01         
+      pdiblcb= -0.0475298 V^-1         pscbe1=     8e+010 V/m     
+       pscbe2=5.2482e-010 V/m           drout=   0.592243         
+         pvag=   0.089248             nfactor=    2.47916         
+         cdsc=    0.00024 f/m^2         cdscb=          0 f/V/m^2 
+        cdscd=          0 f/V/m^2         cit=          0 f/m^2   
+       alpha0=          0 m/V           beta0=         30 V       
+          dlc=9.2659e-009 meter           dwc=          0 meter   
+          clc=     1e-007 meter           cle=        0.6         
+         cgso=  7.75e-010 f/m            cgdo=  7.75e-010 f/m     
+         cgbo=     1e-012 f/m            cgsl=          0 f/m     
+         cgdl=          0 f/m          ckappa=        0.6         
+           cf=          0 f/m            tnom=     300.15 K       
+          kt1=      -0.11 V              kt1l=          0         
+          kt2=      0.022                 ute=       -1.5         
+          ua1=  4.31e-009 m/V             ub1= -7.61e-018 (m/V)^2 
+          uc1=  -5.6e-011 m/V^2            at=      33000 m/s     
+          prt=          0         
+          using Berkeley noise model       noiMod=          1         
+         noia=     1e+020                noib=      50000         
+         noic=  -1.4e-012                  em=   4.1e+007         
+           ef=          1                  af=          1         
+           kf=          0              gdsnoi=-1.23457e-029         
+          using Hspice diodes            using ACM 
+          acm=         3                 hdif=  2.5e-007 meter    
+         ldif=         0 meter             js=         0 amp/m^2  
+          jsw=         0 amp/m            xti=         0          
+            n=         1                   cj=0.000995532 f/m^2    
+           mj=   0.36299                   pb=  0.734574 V        
+         cjsw=2.58606e-010 f/m             mjsw=  0.129691          
+          php=  0.734574 V               pbsw (not used)           
+       cjgate=2.58606e-010 f/m            cjswg (not used)           
+        mjswg (not used)                 pbswg (not used)           
+        lketa= -0.0102793               wketa=   0.010864         
+        pketa=-0.00135679               pvth0= 0.00133957         
+          pk2=-0.00017189               peta0=    -0.0001         
+          pu0=     37.475                 pua=1.76237e-010         
+          pub=9.41179e-025               pvsat=       2000         
+        prdsw=         -5         
+  
+ ***************************************************************************
+ ***        model parameters  model name:   0:cmosp    model type:pmos   ***
+ ***************************************************************************
+
+   *** general parameters ***
+    deriv=   0.           
+
+   ***  level 49  model parameters  ***
+
+       hspver=     2002.2               level=         49         
+      version=        3.1            paramchk=          0         
+       apwarn=          1                lite=          0         
+       vgslim=          0             binUnit=          1         
+       capMod=          2               xpart=        0.5         
+       mobMod=          1              nqsMod=          0         
+          elm=          5            sfvtflag=          0         
+          tox=   4.2e-009 meter            xj=     1e-007 meter   
+      binflag=          0                lmin=          0 meter   
+         lmax=          0 meter          wmin=          0 meter   
+         wmax=          0 meter          lref=          0 meter   
+         wref=          0 meter          lint=2.17652e-008 meter   
+         wint=          0 meter         lmult=          1         
+        wmult=          1                  ll=          0         
+          lln=          1                  lw=          0         
+          lwn=          1                 lwl=          0         
+           wl=          0                 wln=          1         
+           ww=          0                 wwn=          1         
+          wwl=          0                 dwg=-4.22352e-008 m/V     
+          dwb=7.67046e-009 m/V^1/2          a0=    1.67193         
+          ags=   0.393413 V^-1             b0=1.83073e-006 meter   
+           b1=4.73922e-006 meter          keta=  0.0202801 V^-1    
+         voff=  -0.096172 V             ngate=          0 cm^-3   
+          vbx=          0 V               vbm=         -3 V       
+           xt=  1.55e-007 meter          vth0=  -0.422036 V       
+          nch=4.1589e+017 cm^-3          nsub=     6e+016 cm^-3   
+          nlx=9.87603e-008 meter        gamma1=          0 V^-1/2  
+       gamma2=          0 V^-1/2           k1=   0.581374 V^1/2   
+           k2=  0.0303955                  k3=          0         
+          k3b=    11.3427 V^-1             w0=     1e-006 meter   
+         dvt0=   0.513117                dvt1=   0.266526         
+         dvt2=        0.1 V^-1          dvt0w=          0 meter^-1
+        dvt1w=          0 meter^-1      dvt2w=          0 V^-1    
+         dsub=    1.23205                eta0=   0.023671         
+         etab=  -0.300513 V^-1             u0=    120.532 cm^2/V/sec
+           ua=1.64548e-009 m/V              ub=     1e-021 (m/V)^2 
+           uc=    -1e-010 V^-1           vsat=     200000 m/sec   
+           a1=   0.197685 v^-1             a2=   0.578721         
+        delta=       0.01 V              rdsw=    265.261 ohm-um  
+         prwg=        0.5 V^-1           prwb=  -0.214509 V^-1/2  
+           wr=          1                pclm=    2.28443         
+      pdiblc1= 0.00483692             pdiblc2=  0.0442167         
+      pdiblcb=     -0.001 V^-1         pscbe1=1.73289e+009 V/m     
+       pscbe2=     5e-010 V/m           drout=0.000999119         
+         pvag=    14.9616             nfactor=          2         
+         cdsc=    0.00024 f/m^2         cdscb=          0 f/V/m^2 
+        cdscd=          0 f/V/m^2         cit=          0 f/m^2   
+       alpha0=          0 m/V           beta0=         30 V       
+          dlc=2.17652e-008 meter           dwc=          0 meter   
+          clc=     1e-007 meter           cle=        0.6         
+         cgso=   6.6e-010 f/m            cgdo=   6.6e-010 f/m     
+         cgbo=     1e-012 f/m            cgsl=          0 f/m     
+         cgdl=          0 f/m          ckappa=        0.6         
+           cf=          0 f/m            tnom=     300.15 K       
+          kt1=      -0.11 V              kt1l=          0         
+          kt2=      0.022                 ute=       -1.5         
+          ua1=  4.31e-009 m/V             ub1= -7.61e-018 (m/V)^2 
+          uc1=  -5.6e-011 m/V^2            at=      33000 m/s     
+          prt=          0         
+          using Berkeley noise model       noiMod=          1         
+         noia=   9.9e+018                noib=       2400         
+         noic=   1.4e-012                  em=   4.1e+007         
+           ef=          1                  af=          1         
+           kf=          0              gdsnoi=-1.23457e-029         
+          using Hspice diodes            using ACM 
+          acm=         3                 hdif=  2.5e-007 meter    
+         ldif=         0 meter             js=         0 amp/m^2  
+          jsw=         0 amp/m            xti=         0          
+            n=         1                   cj=0.00118386 f/m^2    
+           mj=  0.412416                   pb=  0.853448 V        
+         cjsw=2.06626e-010 f/m             mjsw=  0.289377          
+          php=  0.853448 V               pbsw (not used)           
+       cjgate=2.06626e-010 f/m            cjswg (not used)           
+        mjswg (not used)                 pbswg (not used)           
+        lketa=-0.00256649               wketa= 0.00246786         
+        pketa= 0.00279447               pvth0= 0.00230855         
+          pk2= 0.00265707               peta0=     0.0001         
+          pu0=   -1.84616                 pua=-8.06063e-011         
+          pub=     1e-021               pvsat=        -50         
+        prdsw=    13.6874         
+
+ **warning** both nodes of capacitor     0:c22              defined in subckt 0               
+             are connected together
+
+  
+  
+1 ******  HSPICE    -- U-2003.03  (20030106) 00:58:18  12/13/2017  pcnt         
+ ******  
+ * spice3 file created from cla1.ext - technology: tsmc                        
+  ******  operating point information      tnom=  25.000 temp=  25.000         
+ ******  
+ ***** operating point status is voltage   simulation time is     0.     
+    node    =voltage      node    =voltage      node    =voltage
+
+ +0:a0      =   0.      0:a1      =   0.      0:a2      =   0.     
+ +0:a3      =   3.3000  0:a4      =   0.      0:a5      =   0.     
+ +0:a6      =   0.      0:a7      =   3.3000  0:a_21_377= 698.9396m
+ +0:a_32_481=   3.3000  0:a_32_599=   3.3000  0:a_37_285=  25.8704n
+ +0:a_50_796=  39.3602m 0:a_50_933=   3.3000  0:a_8_285#=  25.7733n
+ +0:a_n1006_=   2.6603  0:a_n1018_=   3.3000  0:a_n1022_=   3.3000 
+ +0:a_n1034_=   3.3000  0:a_n1035_=   9.4582n 0:a_n1050_=   3.3000 
+ +0:a_n1051_=   3.3000  0:a_n1066_=   3.3000  0:a_n106_8=   3.3000 
+ +0:a_n1073_=   2.6603  0:a_n1079_=   3.3000  0:a_n1089_=   3.3000 
+ +0:a_n1093_=   9.4608n 0:a_n1100_=   9.4608n 0:a_n1102_=   9.4582n
+ +0:a_n1118_=   3.3000  0:a_n1144_=   2.6603  0:a_n1144_=   3.3000 
+ +0:a_n1157_=   9.4609n 0:a_n1183_=   9.4608n 0:a_n1227_=   2.6727 
+ +0:a_n1243_=  33.5685m 0:a_n1256_=   3.3000  0:a_n1276_=   9.4608n
+ +0:a_n1320_=   2.6777  0:a_n1336_=  66.6094m 0:a_n1352_=  15.3615m
+ +0:a_n1365_=   3.3000  0:a_n1387_=   9.4608n 0:a_n1431_= 190.0141m
+ +0:a_n1447_= 190.0141m 0:a_n145_5=   3.3000  0:a_n1463_=  27.2008m
+ +0:a_n1480_=  10.2367m 0:a_n1480_=   3.3000  0:a_n1509_=  25.8704n
+ +0:a_n1525_= 698.9395m 0:a_n1538_=  25.7732n 0:a_n1554_=   3.3000 
+ +0:a_n1571_=   3.3000  0:a_n1571_=   3.3000  0:a_n1593_=   3.3000 
+ +0:a_n1606_=   9.4608n 0:a_n1619_=  39.3602m 0:a_n1619_=   3.3000 
+ +0:a_n161_5=   3.3000  0:a_n1650_=  39.3602m 0:a_n1650_=   3.3000 
+ +0:a_n1688_=  25.8702n 0:a_n1704_= 698.9392m 0:a_n1717_=  25.7730n
+ +0:a_n1733_=   3.3000  0:a_n174_4=   3.3000  0:a_n1775_=   3.3000 
+ +0:a_n1814_=   3.3000  0:a_n1830_=   3.3000  0:a_n1843_=   3.3000 
+ +0:a_n1862_=  39.3602m 0:a_n1862_=   3.3000  0:a_n1887_=   9.4608n
+ +0:a_n1890_=  25.8705n 0:a_n1906_= 698.9397m 0:a_n1919_=  25.7733n
+ +0:a_n1931_=  39.3602m 0:a_n1931_=   3.3000  0:a_n1931_=  25.8703n
+ +0:a_n1935_=   3.3000  0:a_n193_7=  39.3602m 0:a_n193_9=   3.3000 
+ +0:a_n1947_= 698.9395m 0:a_n1960_=  25.7732n 0:a_n1970_=   9.4608n
+ +0:a_n1974_=   3.3000  0:a_n1976_=   3.3000  0:a_n19_82=  25.8707n
+ +0:a_n2014_=  94.8906m 0:a_n2018_=   3.3000  0:a_n2030_=  16.1284m
+ +0:a_n2043_=   3.3000  0:a_n2153_=  39.3602m 0:a_n2153_=   3.3000 
+ +0:a_n2195_=   3.3000  0:a_n2211_=   3.3000  0:a_n221_2=  25.8707n
+ +0:a_n2222_=  25.8699n 0:a_n2227_=   3.3000  0:a_n2234_=  25.8703n
+ +0:a_n2238_= 698.9389m 0:a_n2240_=   3.3000  0:a_n2250_= 698.9394m
+ +0:a_n2251_=  25.7728n 0:a_n2261_=   9.4608n 0:a_n2263_=  25.7731n
+ +0:a_n2267_=   3.3000  0:a_n2279_=   3.3000  0:a_n2305_=  39.3602m
+ +0:a_n2305_=   3.3000  0:a_n2309_=   3.3000  0:a_n2318_=   3.3000 
+ +0:a_n2344_=   9.4608n 0:a_n237_3= 698.9399m 0:a_n2388_=  94.8911m
+ +0:a_n2404_=  16.1284m 0:a_n2417_=   3.3000  0:a_n2437_=   9.4608n
+ +0:a_n2481_= 296.4292m 0:a_n2497_=  28.3107m 0:a_n250_2=  25.7735n
+ +0:a_n2513_=  10.5183m 0:a_n2526_=   3.3000  0:a_n2606_=   9.4582n
+ +0:a_n2606_=   3.3000  0:a_n2622_=   3.3000  0:a_n262_4=  39.3602m
+ +0:a_n262_5=   3.3000  0:a_n262_8=  25.8704n 0:a_n2638_=   3.3000 
+ +0:a_n2654_=   3.3000  0:a_n266_2=   3.3000  0:a_n2670_=   3.3000 
+ +0:a_n2675_=   2.6603  0:a_n2683_=   3.3000  0:a_n2691_=   3.3000 
+ +0:a_n2704_=   9.4608n 0:a_n2704_=   9.4582n 0:a_n2720_=   3.3000 
+ +0:a_n2742_=   2.6603  0:a_n2748_=   2.6603  0:a_n2748_=   3.3000 
+ +0:a_n2758_=   3.3000  0:a_n2762_=   9.4608n 0:a_n2771_=   9.4582n
+ +0:a_n2787_=   3.3000  0:a_n2787_=   9.4608n 0:a_n278_9= 698.9395m
+ +0:a_n2826_=   9.4609n 0:a_n2831_=   2.6727  0:a_n2847_=  33.5685m
+ +0:a_n2860_=   3.3000  0:a_n2880_=   9.4608n 0:a_n291_8=  25.7733n
+ +0:a_n2924_=   2.6777  0:a_n2940_=  66.6093m 0:a_n2956_=  15.3615m
+ +0:a_n2969_=   3.3000  0:a_n2991_=   9.4608n 0:a_n3035_= 190.0158m
+ +0:a_n3051_= 190.0158m 0:a_n305_2=   3.3000  0:a_n3067_=  27.2009m
+ +0:a_n307_8=   3.3000  0:a_n3084_=  10.2367m 0:a_n3084_=   3.3000 
+ +0:a_n345_4=  94.8911m 0:a_n349_8=   3.3000  0:a_n35_93= 698.9400m
+ +0:a_n361_4=  16.1284m 0:a_n374_5=   3.3000  0:a_n47_27=   3.3000 
+ +0:a_n47_48=  39.3602m 0:a_n47_59=   3.3000  0:a_n484_7=  39.3602m
+ +0:a_n484_9=   3.3000  0:a_n48_82=  25.7736n 0:a_n526_5=   3.3000 
+ +0:a_n542_5=   3.3000  0:a_n553_8=  25.8702n 0:a_n558_5=   3.3000 
+ +0:a_n565_2=  25.8705n 0:a_n569_9= 698.9393m 0:a_n571_4=   3.3000 
+ +0:a_n581_3= 698.9397m 0:a_n582_8=  25.7731n 0:a_n592_4=   9.4608n
+ +0:a_n594_2=  25.7733n 0:a_n598_8=   3.3000  0:a_n610_2=   3.3000 
+ +0:a_n636_4=  39.3602m 0:a_n636_5=   3.3000  0:a_n640_8=   3.3000 
+ +0:a_n649_2=   3.3000  0:a_n64_81=   3.3000  0:a_n675_4=   9.4608n
+ +0:a_n719_4=  94.8900m 0:a_n735_4=  16.1284m 0:a_n748_5=   3.3000 
+ +0:a_n768_4=   9.4608n 0:a_n812_4= 296.4297m 0:a_n828_4=  28.3107m
+ +0:a_n844_4=  10.5183m 0:a_n857_5=   3.3000  0:a_n8_273=   3.3000 
+ +0:a_n937_7=   9.4582n 0:a_n937_9=   3.3000  0:and1    =   9.4608n
+ +0:and2    =   9.4608n 0:and3    =   9.4608n 0:b0      =   0.     
+ +0:b1      =   0.      0:b2      =   0.      0:b3      =   0.     
+ +0:b4      =   0.      0:b5      =   0.      0:b6      =   0.     
+ +0:b7      =   0.      0:c0      =   0.      0:c1      =   9.4609n
+ +0:c2      =   9.4609n 0:c3      =   9.4609n 0:c4      =   9.4609n
+ +0:c5      =   9.4609n 0:c6      =   9.4609n 0:c7      =   9.4609n
+ +0:c8      =   9.4609n 0:g0      =   9.4608n 0:g1      =   9.4608n
+ +0:g2      =   9.4608n 0:g3      =   9.4608n 0:g4      =   9.4608n
+ +0:g5      =   9.4608n 0:g6      =   9.4608n 0:g7      =   9.4608n
+ +0:p0      =  51.7415n 0:p1      =  51.7408n 0:p2      =  51.7405n
+ +0:p3      =   3.3000  0:p4      =  51.7404n 0:p5      =  51.7407n
+ +0:p6      =  51.7398n 0:p7      =   3.3000  0:s0      =  51.7408n
+ +0:s1      =  51.7414n 0:s2      =  51.7409n 0:s3      =   3.3000 
+ +0:s4      =  51.7408n 0:s5      =  51.7410n 0:s6      =  51.7406n
+ +0:s7      =   3.3000  0:vdd     =   3.3000 
+
+  Opening plot unit= 79
+ file=c:\users\star3\desktop\finalproj\clafinal2.tr0                           
+
+ ******  
+ * spice3 file created from cla1.ext - technology: tsmc                        
+  ******  transient analysis               tnom=  25.000 temp=  25.000         
+ ******  
+   tpdr=  5.8824E-09  targ=  8.0382E-08   trig=  7.4500E-08
+   tpdf= failed       targ= not found    trig=  9.9500E-08
+   tpd= failed                         measure parameter failed
+   avgpower1=  2.0832E-03  from=  1.0000E-08     to=  1.0000E-07
+
+          ***** job concluded
+1 ******  HSPICE    -- U-2003.03  (20030106) 00:58:18  12/13/2017  pcnt         
+ ******  
+ * spice3 file created from cla1.ext - technology: tsmc                        
+  ******  job statistics summary           tnom=  25.000 temp=  25.000         
+ ******  
+
+           total memory used       2134 kbytes
+
+  # nodes =  1199 # elements=   546
+  # diodes=     0 # bjts    =     0 # jfets   =     0 # mosfets =   472
+
+     analysis      time      # points  tot. iter  conv.iter
+
+     op point          0.04         1        39
+     transient         2.44     10001      4219      2031 rev=     5
+     readin            0.08
+     errchk            0.00
+     setup             0.01
+     output            0.00
+           total cpu time          2.61 seconds
+               job started at  00:58:18  12/13/2017
+               job ended   at  00:58:21  12/13/2017
+
+
+ Init: hspice initialization file: C:\synopsys\Hspice2003.03\hspice.ini
+  lic: Release hspicewin token(s) 
